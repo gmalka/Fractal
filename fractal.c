@@ -6,7 +6,7 @@
 /*   By: gmalka <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 19:57:56 by gmalka            #+#    #+#             */
-/*   Updated: 2021/11/22 15:06:00 by gmalka           ###   ########.fr       */
+/*   Updated: 2021/11/22 15:55:02 by gmalka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,6 @@ static void	init_fract(t_fract *f)
 	f->up = 0;
 	f->itert = 35;
 	f->i = 0;
-	f->scale = 1;
 }
 
 static int	ft_close(int keycode, t_fract *vars)

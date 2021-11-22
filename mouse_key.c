@@ -6,7 +6,7 @@
 /*   By: gmalka <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:00:43 by gmalka            #+#    #+#             */
-/*   Updated: 2021/11/22 13:49:27 by gmalka           ###   ########.fr       */
+/*   Updated: 2021/11/22 16:06:29 by gmalka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ static void	remake_fract(t_fract *f, float x, float y, float zoom)
 	if (zoom != 0)
 	{
 		f->t = f->t * zoom;
-		f->scale = zoom * f->scale;
 		f->a += (x - f->a) - (x - f->a) * zoom;
 		f->b += (y - f->b) - (y - f->b) * zoom;
 	}

@@ -6,7 +6,7 @@
 /*   By: gmalka <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/21 20:02:47 by gmalka            #+#    #+#             */
-/*   Updated: 2021/11/22 13:38:44 by gmalka           ###   ########.fr       */
+/*   Updated: 2021/11/22 15:53:14 by gmalka           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ typedef struct s_fract {
 	float					p;
 	float					t;
 	float					pc;
-	float					scale;
 	float					perx;
 	int						itert;
 	int						i;
