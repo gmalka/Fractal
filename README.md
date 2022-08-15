@@ -20,5 +20,10 @@ Available arguments :
 | Left button(Only Julia) | Change complex parameter |
 | ESC | Quit |
 
-example:
+# example:
+
+## Borningship:
 ![Image alt](/img/Borningship.png)
+
+##Julia:
+![Image alt](/img/Julia.png)
