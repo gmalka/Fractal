@@ -22,8 +22,8 @@ Available arguments :
 
 # example:
 
-## Borningship:
+**Borningship:**
 ![Image alt](/img/Borningship.png)
 
-##Julia:
+**Julia:**
 ![Image alt](/img/Julia.png)
