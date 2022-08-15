@@ -12,7 +12,7 @@
 
 #include "fractal.h"
 
-static void		find_fractal_name(t_fract *var);
+static int		find_fractal_name(t_fract *var);
 
 static void		init_fract(t_fract *f);
 
@@ -67,7 +67,7 @@ static int	ft_strncmp(char *str, char *chm)
 	return (0);
 }
 
-static void	find_fractal_name(t_fract *var)
+static int	find_fractal_name(t_fract *var)
 {
 	if (ft_strncmp(var->data.name, "Mandelbrot"))
 		var->frct = 1;
@@ -75,8 +75,15 @@ static void	find_fractal_name(t_fract *var)
 		var->frct = 2;
 	else if (ft_strncmp(var->data.name, "Borningship"))
 		var->frct = 3;
+	else
+	{
+		write(2, "Dont finded name, please use Mandelbrot, ", 41); 
+		write(2, "Julia or Borningship to build a fractal\n", 40);
+		return 0;
+	}
 	make_fract(var);
 	mlx_loop(var->data.mlx);
+	return 1;
 }
 
 int	main(int argc, char *argv[])
@@ -90,7 +97,8 @@ int	main(int argc, char *argv[])
 		mlx_hook(fract.data.win, 17, (1L << 0), ft_close, &fract);
 		mlx_mouse_hook(fract.data.win, ft_mouse_hook, &fract);
 		fract.data.name = argv[1];
-		find_fractal_name(&fract);
+		if (!find_fractal_name(&fract))
+			return -1;
 	}
 	else
 		write(1, "Incorrect number of arguments!\n", 31);

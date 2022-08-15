@@ -12,7 +12,8 @@
 
 NAME		=	fractol
 
-SRC			=	$(shell find . -name "*.c")
+SRC			=	draw_fractal.c find_fractal.c fractal.c \
+				key_hook.c mouse_key.c
 
 OBJ			=	$(SRC:.c=.o)
 
@@ -29,7 +30,8 @@ all		:	$(NAME)
 bonus	:	$(NAME)
 
 $(NAME)	:	$(OBJ) $(HEADER)
-	$(CC) -lmlx -framework OpenGL -framework AppKit $(OBJ) -o $(NAME)
+	make -C ./mlx
+	$(CC) $(CFLAGS) $(OBJ) ./mlx/libmlx.a -framework OpenGL -framework AppKit -o $(NAME)
 
 clean	:
 	@rm -f $(OBJ)
