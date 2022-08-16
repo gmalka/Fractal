@@ -14,10 +14,10 @@ Available arguments :
 
 | **Key** | **Option** |
 |----------------|---------|
-| +, -, MButton | change color |
+| `+`, `-`, `MButton` | change color |
 | Arrow keys | move fractal |
-| Left button(Only Julia) | Change complex parameter |
-| ESC | Quit |
+| Left mouse button(Only Julia) | Change complex parameter |
+| `ESC` | Quit |
 
 # Examples:
 
