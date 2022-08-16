@@ -12,9 +12,8 @@ Available arguments :
 - Julia
 - Borningship
 
-| LEFT | LEFT |
-|----------------|:---------:|
 | **Key** | **Option** |
+|----------------|---------|
 | +, -, MButton | change color |
 | Arrow keys | move fractal |
 | Left button(Only Julia) | Change complex parameter |
