@@ -14,8 +14,8 @@ Available arguments :
 
 | **Key** | **Option** |
 |----------------|---------|
-| `+`, `-`, `MButton` | change color |
-| Arrow keys | move fractal |
+| `+`, `-`, `MButton` | Change color |
+| Arrow keys | Move fractal |
 | Left mouse button(Only Julia) | Change complex parameter |
 | `ESC` | Quit |
 
