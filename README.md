@@ -19,7 +19,7 @@ Available arguments :
 | Left button(Only Julia) | Change complex parameter |
 | ESC | Quit |
 
-# example:
+# Examples:
 
 **Borningship:**
 ![Image alt](/img/Borningship.png)
